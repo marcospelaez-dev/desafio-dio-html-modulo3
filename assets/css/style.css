@@ -37,14 +37,53 @@ a { color:blue; text-decoration: none;}
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
+    text-align: center;
+    margin-bottom: 10px;
 }
 .anchors {
-    border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
+    border: 1px solid #cdcdcd;
+    text-align: center;
 }
+
 .sidebar {
     border-right: solid 1px #cdcdcd;
 }
+.sidebar ul li a:link {
+    font-size: 15px;
+}
+.sidebar ul li a:active {
+    color: black;
+}
+.sidebar ul li a:hover{
+    color: aquamarine
+}
+
 figure {
     text-align: center;
+}
+figcaption{
+    font-size: 12px;
+}
+
+.content-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    background-color: rgb(252, 252, 252);
+}
+.content-info h5{
+    padding: 2px;
+    width: 100%;
+    display: inline;
+    font-size: 15px;
+    margin-block: 0;
+    font-weight: normal;
+    background-color: beige;
+    text-align: left;
+}
+.content-info p{
+    align-self: flex-start;
+    margin-left: 5px;
+    padding: 0;
 }
